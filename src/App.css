@@ -1,38 +1,93 @@
 .App {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-form-container,
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+    font-weight: bold;
+    margin-left: 7px;
+    color: #3e3f5e;
+    font-family: "Roboto";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(221, 224, 223);
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    border-color: #0865df;
+    background-color: #229bd3;
+    padding: 15px;
+    border-radius: 22px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    background-color: #ffffff;
+}
+
+.Link-btn {
+    background: none;
+    color: #229bd3;
+    text-decoration: underline;
+    border: none;
+    text-align: center;
+    width: 70%;
+}
+
+.Rem-btn {
+    font-weight: normal;
+    display: flex;
+    border-color: #229bd3;
+}
+
+.login-btn {
+    border-radius: 30px;
+    align-items: right;
+    text-align: right;
+    margin-left: auto;
+    padding: 15px 50px 15px 60px;
+    color: white;
+}
+
+.Reg-btn {
+    color: white;
+}
+
+.name {
+    border-color: rgb(53, 50, 50);
+}
+
+.what {
+    color: #229bd3;
+}
+
+.shift {
+    margin-left: 30px;
+}
+
+.shift1 {
+    margin-left: 133px;
+}
+
+.shift2 {
+    margin-left: 40px;
 }
